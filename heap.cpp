@@ -58,41 +58,41 @@ void heap_sort(int A[], int n)
     }
 }
 
-// int main()
-// {
-//     int A[100]; 
-//     int n = 0;   
+int main()
+{
+    int A[100]; 
+    int n = 0;   
 
-//     insert(A, n, 12);
-//     insert(A, n, 11);
-//     insert(A, n, 13);
-//     insert(A, n, 5);
-//     insert(A, n, 6);
-//     insert(A, n, 7);
+    insert(A, n, 12);
+    insert(A, n, 11);
+    insert(A, n, 13);
+    insert(A, n, 5);
+    insert(A, n, 6);
+    insert(A, n, 7);
 
-//     cout << "After inserting elements:" << endl;
-//     for (int i = 0; i < n; ++i)
-//     {
-//         cout << A[i] << " ";
-//     }
+    cout << "After inserting elements:" << endl;
+    for (int i = 0; i < n; ++i)
+    {
+        cout << A[i] << " ";
+    }
 
-//     cout << endl;
-//     cout << "After heapifying:" << endl;
-//     for (int i = 0; i < n/2; ++i)
-//     {
-//         heapify(A,n,i);
-//     }
-//     for(int i=0;i<n;i++)
-//     {
-//         cout<<A[i]<<" ";
-//     }
+    cout << endl;
+    cout << "After heapifying:" << endl;
+    for (int i = 0; i < n/2; ++i)
+    {
+        heapify(A,n,i);
+    }
+    for(int i=0;i<n;i++)
+    {
+        cout<<A[i]<<" ";
+    }
 
-//     heap_sort(A, n);
-//     cout << endl;
-//     cout << "The elements after heap sort are:" << endl;
-//     for (int i = 0; i < n; i++)
-//     {
-//         cout << A[i] << " ";
-//     }
-//     return 0;
-// }
+    heap_sort(A, n);
+    cout << endl;
+    cout << "The elements after heap sort are:" << endl;
+    for (int i = 0; i < n; i++)
+    {
+        cout << A[i] << " ";
+    }
+    return 0;
+}
