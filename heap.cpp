@@ -38,14 +38,14 @@ void insert(int A[], int &n, int key)
     }
 }
 
-// int deleted(int A[], int &n)
-// {
-//     int max_ele = A[0];
-//     swap(A[0], A[n - 1]);
-//     n--;
-//     heapify(A, n, 0);
-//     return max_ele;
-// }
+int deleted(int A[], int &n)
+{
+    int max_ele = A[0];
+    swap(A[0], A[n - 1]);
+    n--;
+    heapify(A, n, 0);
+    return max_ele;
+}
 
 
 // void heap_sort(int A[], int n)
