@@ -48,15 +48,15 @@ int deleted(int A[], int &n)
 }
 
 
-// void heap_sort(int A[], int n)
-// {
-//     while (n > 1)
-//     {
-//         swap(A[0], A[n - 1]);
-//         n--;
-//         heapify(A, n, 0);
-//     }
-// }
+void heap_sort(int A[], int n)
+{
+    while (n > 1)
+    {
+        swap(A[0], A[n - 1]);
+        n--;
+        heapify(A, n, 0);
+    }
+}
 
 // int main()
 // {
