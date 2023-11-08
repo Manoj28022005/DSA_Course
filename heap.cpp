@@ -25,18 +25,18 @@ void heapify(int A[], int n, int i)
 }
 
 
-// void insert(int A[], int &n, int key)
-// {
-//     n = n + 1;
-//     int i = n - 1;
-//     A[i] = key;
+void insert(int A[], int &n, int key)
+{
+    n = n + 1;
+    int i = n - 1;
+    A[i] = key;
 
-//     while (i >= 1 && A[i / 2] < A[i])
-//     {
-//         swap(A[i], A[i / 2]);
-//         i = i / 2;
-//     }
-// }
+    while (i >= 1 && A[i / 2] < A[i])
+    {
+        swap(A[i], A[i / 2]);
+        i = i / 2;
+    }
+}
 
 // int deleted(int A[], int &n)
 // {
